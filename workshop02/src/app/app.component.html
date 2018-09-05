@@ -11,7 +11,9 @@
 </app-address-entry>
 
 <mat-tab-group (selectedTabChange)="loadAddress($event)">
-    <mat-tab *ngFor="Let t of tabs" [label]="t.label">
+    <mat-tab *ngFor="let t of tabs" [label]="t.label">
       some content here
     </mat-tab>
-</mat-tab-group>
+
+  </mat-tab-group>
+

@@ -21,7 +21,7 @@ findAddress(pattern: RegExp): Promise<Address[]>{
    return(
     this.db['contacts']
     .orderBy('name')
-    .filter(add=> {
+    .filter(addr=> {
         return(pattern.test(addr.name));
     })
     .toArray()
