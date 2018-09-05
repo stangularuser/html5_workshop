@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+
+  <mat-toolbar-row>
+      <mat-icon>android</mat-icon> Address Book
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<app-address-entry (newAddress)="processAddress($event)">
+</app-address-entry>
+
+<mat-tab-group (selectedTabChange)="loadAddress($event)">
+    <mat-tab *ngFor="Let t of tabs" [label]="t.label">
+      some content here
+    </mat-tab>
+</mat-tab-group>

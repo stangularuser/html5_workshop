@@ -2,7 +2,6 @@
 
     <table>
       <tr>
-  
         <td>
           <div>
             <select name="fruitList" ngModel (change)="displayFruit($event)">
@@ -26,6 +25,16 @@
           </div>
           <button type="submit">Add</button>
         </td>
+      </tr>
+      <tr>
+        <div>
+          You have selected:<br>
+          {{ selectedFruit }}
+        </div>
+    <div>
+
+
+    </div>
       </tr>
     </table>
   

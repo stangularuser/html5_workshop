@@ -1,0 +1,14 @@
+
+<form #createForm="ngForm" (ngSubmit)="add(createForm)">
+    todo name:
+    <input type="text" name="taskName" size="30"
+    placeholder="Plase enter your task" ngModel>
+
+
+
+    Due:
+    <input type="date" name="dueDate" >
+
+    <button type="submit">Add</button>
+</form>
+

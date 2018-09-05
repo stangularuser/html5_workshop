@@ -1,0 +1,27 @@
+<mat-toolbar>
+  <span>TODO</span>
+</mat-toolbar>
+
+
+
+<form #createForm="ngForm" (ngSubmit)="add(createForm)">
+  todo name:
+  <input type="text" name="taskName" size="30"
+  placeholder="Plase enter your task" ngModel>
+
+
+
+  Due:
+  <input type="date" name="dueDate" >
+
+  <button type="submit">Add</button>
+</form>
+<br><br>
+<button type="button" mat-raised-button>Hello</button>
+
+<button type="button" color="warn" mat-button>
+  <mat-icon>free_breakfast</mat-icon>
+</button>
+
+<br>
+ 

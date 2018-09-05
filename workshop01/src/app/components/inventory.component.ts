@@ -39,6 +39,10 @@ export class InventoryComponent implements OnInit {
     this.selectedFruit = this.fruitsList[event.target.value].label;
   }
 
+displaySelection(event: any){
+  test
+}
+
   add(form: NgForm) {
     console.log("form: ", form.value);
     //construct the payload
