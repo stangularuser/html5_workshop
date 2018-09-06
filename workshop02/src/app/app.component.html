@@ -12,7 +12,13 @@
 
 <mat-tab-group (selectedTabChange)="loadAddress($event)">
     <mat-tab *ngFor="let t of tabs" [label]="t.label">
-      some content here
+<mat-list role="list">
+<mat-list-item role="listItem" *ngFor="let i of contactList">
+  {{i.name | uppercase}}
+  {{i.phone}}
+</mat-list-item>
+
+    </mat-list>
     </mat-tab>
 
   </mat-tab-group>

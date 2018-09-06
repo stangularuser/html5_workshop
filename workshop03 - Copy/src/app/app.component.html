@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  STAR WARS
+</mat-toolbar>
+
+
+
+<form #form="ngForm" (ngSubmit)="processForm(form)" fxLayout="column" fxLayoutGap=5px>
+ 
+  <mat-form-field>
+    <input type="text" name="peopleID" placeholder="People ID" ngModel required matInput>
+  </mat-form-field>
+
+  <button type="submit"  [disabled]="form.invalid">
+    <mat-icon>
+      search
+    </mat-icon>
+  </button>
+
+</form>
