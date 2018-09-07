@@ -1,0 +1,41 @@
+<mat-toolbar color="primary" fxLayout="row column" fxLayoutAlign="space-between center">
+
+    <span fxLayout="row column" fxLayoutAligh="start center">
+      <img src="assets/starwarsicon.png" class="icon"> 
+      STAR WARS
+    </span>
+  
+    <button type="button" mat-icon-button-color="accent" (click)="goBack()">
+          <mat-icon>navigate_before</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <!--
+  <mat-nav-list>
+      <h2 mat-subheader>Characters</h2>
+      <a *ngFor="let p of people1" [routerLink]="[ '/detail', p.id]" mat-list-item>
+        {{p.name}}
+      </a>
+    
+    </mat-nav-list>
+  -->
+
+  <mat-card class="card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{people1?.name}}</mat-card-title>
+        <mat-card-subtitle>{{people1?.created}}</mat-card-subtitle>
+      </mat-card-header>
+      <img [src] ="people1?.image" mat-card-image>
+      <mat-card-content>
+        <p>
+          XXX
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+
+    }

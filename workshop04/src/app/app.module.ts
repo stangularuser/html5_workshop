@@ -9,27 +9,25 @@ import { MaterialModule } from './material.module';
 import { StarWarService } from './starwars.service';
 
 import {StarWarsDatabaseService} from './starwars.storage.service';
-import { HomeComponent } from './components/home.component';
-import { CatComponent } from './components/cat.component';
+import { PeopleListComponent } from './components/people-list.component';
 
 import {ApprouteModule} from './approute.module';
-
-//import { AddressEntryComponent } from './components/address-entry.component';
-//import {AddressService} from './address.service';
-//import { AddressListComponent } from './components/address-list/address-list.component';
+import { AddPeopleComponent } from './components/add-people.component';
+import { ShowcardComponent } from './components/showcard.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
+  //all components that belong to this module
   declarations: [
     AppComponent,
-    HomeComponent,
-    CatComponent
-  //  AddressEntryComponent,
-  //  AddressListComponent
-  ],
-  imports: [
+    PeopleListComponent,
+    AddPeopleComponent,
+    ShowcardComponent
+    ],
+  imports: [ //importing modules
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule, MaterialModule, HttpClientModule, ApprouteModule
+    FormsModule, MaterialModule, HttpClientModule, ApprouteModule, MatCardModule
   ],
 providers: [StarWarService, StarWarsDatabaseService]  ,
   bootstrap: [AppComponent]
